@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/historyCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/history_card_margin_rl"
+    android:layout_marginTop="@dimen/history_card_margin_tb"
+    android:layout_marginEnd="@dimen/history_card_margin_rl"
+    android:layout_marginBottom="@dimen/history_card_margin_tb"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/history_card_corner_radius"
+    app:cardElevation="@dimen/history_card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/history_item_card_padding">
+
+        <TextView
+            android:id="@+id/historyCardAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_amount"
+            android:textSize="@dimen/history_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/history_text_size" />
+
+        <TextView
+            android:id="@+id/history_card_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardAmt"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:layout_marginTop="@dimen/history_subtitle_margin_top"
+            android:text="@string/items"
+            android:textColor="@color/history_card_subtitle_color"
+            android:textSize="@dimen/history_card_subtitle_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/history_card_items_text"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:textSize="@dimen/history_card_subtext_text_size" />
+
+        <TextView
+            android:id="@+id/history_card_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardItems"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:text="@string/orderedon"
+            android:textColor="@color/history_card_subtitle_color"
+            android:textSize="@dimen/history_card_subtitle_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/history_card_date_text"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:textSize="@dimen/history_card_subtext_text_size" />
+
+        <TextView
+            android:id="@+id/history_card_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardDate"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:text="@string/status"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/history_card_subtitle_color"
+            android:textSize="@dimen/history_card_subtitle_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#CE0000"
+            android:layout_below="@id/history_card_status_text"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/historyCardRepeatButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardStatus"
+            android:layout_alignParentEnd="true"
+            android:text="@string/history_card_button_text" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

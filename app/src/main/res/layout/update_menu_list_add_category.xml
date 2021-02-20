@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:text="@string/add_category"
+        android:textSize="@dimen/list_add_category_title_size" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addCategoryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="@string/category_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addItemEditText"
+            android:layout_width="match_parent"
+            android:inputType="textCapWords"
+            android:layout_height="wrap_content"
+            android:hint="@string/item_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/item_price" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/selectTimeChipGroup"
+        android:layout_width="wrap_content"
+        android:animateLayoutChanges="true"
+        style="@style/Widget.MaterialComponents.ChipGroup"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:layout_gravity="center_horizontal"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/morningChip"
+            app:checkedIconVisible="true"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/breakfast" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/noonChip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedIconVisible="true"
+            android:text="@string/lunch" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/eveningChip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:checkedIconVisible="true"
+            android:text="@string/dinner" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginBottom="@dimen/list_add_category_edit_margin_tb"
+        android:animateLayoutChanges="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/itemImageSelectIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/itemImageBrowseImage"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/select_image" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateMenuListAddCategoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/update_menu_list_header_margin"
+        android:layout_marginEnd="@dimen/update_menu_list_header_margin"
+        android:layout_marginBottom="@dimen/update_menu_list_header_margin"
+        android:text="@string/add_category" />
+
+</LinearLayout>

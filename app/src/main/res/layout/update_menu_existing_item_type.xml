@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginBottom="@dimen/list_add_category_edit_margin_tb"
+        android:text="@string/update_item"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginBottom="@dimen/list_add_category_edit_margin_tb">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/existingItemNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:hint="@string/item_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginTop="@dimen/list_add_category_edit_margin_tb"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginBottom="@dimen/list_add_category_edit_margin_tb">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/existingItemPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/item_price" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/list_add_category_edit_margin_tb">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/itemImageSelectIV"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/itemImageBrowseImage"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/select_image" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginRight="@dimen/list_add_category_edit_margin_rl"
+        android:layout_marginBottom="@dimen/list_add_category_edit_margin_tb">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateExistingCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/cancel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateExistingItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="@dimen/list_add_category_edit_margin_rl"
+            android:layout_marginBottom="@dimen/list_add_category_edit_margin_tb"
+            android:text="@string/update_item" />
+
+    </LinearLayout>
+
+</LinearLayout>

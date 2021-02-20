@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/category_item_card_margin_rl"
+    android:layout_marginTop="@dimen/category_item_card_margin_tb"
+    android:layout_marginEnd="@dimen/category_item_card_margin_rl"
+    android:layout_marginBottom="@dimen/category_item_card_margin_tb"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="@dimen/category_item_card_corner_radius"
+    app:cardElevation="@dimen/category_card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/categoryItemImage"
+            android:layout_width="@dimen/category_item_image_width"
+            android:layout_height="@dimen/category_item_image_height"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/category_item_image_margin"
+            android:src="@drawable/ic_menu_manage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".9"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/category_item_text_padding_tb"
+                android:paddingBottom="@dimen/category_item_text_padding_tb"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/categoryItemTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/category_item_text_padding_left"
+                    android:paddingEnd="@dimen/category_item_text_padding_left"
+                    android:textSize="@dimen/category_item_title_size" />
+
+                <TextView
+                    android:id="@+id/categoryItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/category_item_text_padding_left"
+                    android:paddingEnd="@dimen/category_item_text_padding_left"
+                    android:textSize="@dimen/category_item_price_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/categoryItemMinus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/category_item_chip_margin"
+                android:layout_marginTop="@dimen/category_item_chip_margin"
+                android:layout_marginBottom="@dimen/category_item_chip_margin"
+                android:layout_weight="0.005"
+                android:background="@drawable/round_button_white"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/minus"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/categoryItemCount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/category_item_chip_margin"
+                android:layout_weight="0.005"
+                android:background="@drawable/round_button_grey"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/add" />
+
+            <TextView
+                android:id="@+id/categoryItemAdd"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/category_item_chip_margin"
+                android:layout_marginEnd="@dimen/category_item_chip_margin"
+                android:layout_marginBottom="@dimen/category_item_chip_margin"
+                android:layout_weight="0.005"
+                android:background="@drawable/round_button_white"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/add"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

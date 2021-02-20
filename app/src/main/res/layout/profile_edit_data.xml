@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/profile_data_margin_tb"
+    android:layout_marginBottom="@dimen/profile_data_margin_tb"
+    android:layout_marginStart="@dimen/profile_data_margin_rl"
+    android:layout_marginEnd="@dimen/profile_data_margin_rl"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/profile_edit_edit_text_margin_end"
+        android:layout_weight="0.85">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profileEditText"
+            android:layout_width="match_parent"
+            android:hint="@string/edit"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/profileEditDone"
+        android:layout_width="@dimen/profile_edit_image_width"
+        android:layout_height="@dimen/profile_edit_image_height"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.15"
+        android:src="@drawable/ic_outline_edit_24px" />
+
+</LinearLayout>

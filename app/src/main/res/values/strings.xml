@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Caffeinate</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="history">History</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="items">ITEMS</string>
+    <string name="orderedon">ORDERED ON</string>
+    <string name="history_card_button_text">Repeat Order</string>
+    <string name="add">+</string>
+    <string name="minus">-</string>
+    <string name="proceed">Proceed</string>
+    <string name="payment">Payment</string>
+    <string name="cart">Cart</string>
+    <string name="the_end">-The End-</string>
+    <string name="profile">Profile</string>
+    <string name="edit">Edit</string>
+    <string name="update_menu">Update Menu</string>
+    <string name="add_category">Add Category</string>
+    <string name="category_name">Category Name</string>
+    <string name="item_name">Item Name</string>
+    <string name="addText">Add</string>
+    <string name="item_price">Item Price</string>
+    <string name="update_item">Update Item</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="new_user_sign_up_text">New to the app?
+        <font color='#008577'><u>Sign Up</u></font></string>
+    <string name="old_user_sign_in_text">Already have an account?
+        <font color='#008577'><u>Sign In</u></font></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="company_id">Company ID</string>
+    <string name="sign_out">Logout</string>
+    <string name="enter_registered_email">Please Enter Your Registed E-mail Id</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="add_item">Add Item</string>
+    <string name="zero_rupee">₹0</string>
+    <string name="rupee_symbol">₹</string>
+    <string name="select_image">Select Image</string>
+    <string name="select_image_for_item">Select Image for Item</string>
+    <string name="ordered_by">ORDERED BY</string>
+    <string name="upload">Upload</string>
+    <string name="edit_menu">Edit Menu</string>
+
+    <string name="default_notification_channel_id">GENERAL_CHANNEL</string>
+    <string name="channel_name">Order Notifications</string>
+    <string name="channel_description">Order Placed,Order Ready</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="order_ready">Order Ready</string>
+    <string name="order_complete">Successful</string>
+    <string name="customer_order_placed">Your order is placed</string>
+    <string name="customer_order_confirm">Your order has been confirmed by the cafe.</string>
+    <string name="customer_order_ready">Your order is ready to pickup</string>
+    <string name="customer_order_successful">Successful Order</string>
+    <string name="status">STATUS</string>
+    <string name="yes">Yes</string>
+    <string name="order">Order</string>
+    <string name="noon">Noon</string>
+    <string name="evening">Evening</string>
+    <string name="morning">Morning</string>
+    <string name="select_menu_to_display">Select menu to display</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="make_store_account">Make Store Account</string>
+    <string name="add_staff_account">Add Staff Account</string>
+    <string name="add_string">Add</string>
+    <string name="make_staff_account">Make Staff Account</string>
+    <string name="all_store_users">All Store Account</string>
+    <string name="add_store_account">Add Store Account</string>
+    <string name="your_cafe_buddy">Your Cafe Buddy</string>
+    <string name="order_successful">Order Successful</string>
+    <string name="transaction_status">Transaction Status</string>
+    <string name="about">About</string>
+    <string name="developed_by">Developed By</string>
+    <string name="app_description">\t\tCaffeinate is an interactive Pre-Order café based application developed and managed by Infinite Horizons 2019.
+\n\nCaffeinate is a tailor made and customizable application for cafes of different settings incorporating a personal feel while still retaining the core function of café customer service.
+\n\nDesigned keeping regular consumers in mind and a simple user friendly structure Caffeinate allows you to perform the integral functions such as :
+\n\n\t\t•	Scheduling orders.
+\n\t\t•	Repeat orders.
+\n\t\t•	Order history and transactions.
+\n\t\t•	Manage orders.
+\n\t\t•	Ease of access to payment gateways.
+\n\t\t•	Dynamic menu options timed according to Breakfast, Lunch and Dinner.
+\n\t\t•	Accountability for both consumers and service providers.
+\n\nIt circumvents the need to stand and wait in a queue to place an order, allowing you to do the same at the comfort of your office using pop up notifications to give you order status updates.
+\n\nFor further information on other projects and Caffeinate for your business, see CONTACT US.
+\n\n © Infinite Horizons 2019
+</string>
+    <string name="contact_us">Contact us</string>
+    <string name="app_info">App info</string>
+    <string name="help">Help</string>
+    <string name="version">Version 1.0.1</string>
+    <string name="developers_name">Infinite Horizons</string>
+    <string name="contact_us_text">Describe</string>
+    <string name="submit_text">Submit</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_item_header_margin_rl"
+        android:layout_marginTop="@dimen/list_add_item_header_margin_tb"
+        android:layout_marginRight="@dimen/list_add_item_header_margin_rl"
+        android:layout_marginBottom="@dimen/list_add_item_header_margin_tb"
+        android:layout_centerVertical="true"
+        android:text="@string/add_item"
+        android:textSize="@dimen/list_add_item_title_size" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/listAddItemAddChip"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/list_add_item_header_margin_rl"
+        android:layout_marginTop="@dimen/list_add_item_header_margin_tb"
+        android:layout_marginRight="@dimen/list_add_item_header_margin_rl"
+        android:layout_marginBottom="@dimen/list_add_item_header_margin_tb"
+        android:text="@string/addText" />
+
+</RelativeLayout>

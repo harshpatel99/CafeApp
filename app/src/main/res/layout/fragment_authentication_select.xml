@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome_screen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabAuthSelectSignIn"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sign_in_margin_rl"
+            android:layout_marginTop="@dimen/sign_in_margin_tb"
+            android:layout_marginRight="@dimen/sign_in_margin_rl"
+            android:layout_marginBottom="48dp"
+            android:text="@string/sign_in"
+            app:icon="@drawable/ic_arrow_forward_black_24dp" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabAuthSelectSignUp"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sign_in_margin_rl"
+            android:layout_marginTop="@dimen/sign_in_margin_tb"
+            android:layout_marginRight="@dimen/sign_in_margin_rl"
+            android:layout_marginBottom="48dp"
+            android:text="@string/sign_up"
+            app:icon="@drawable/ic_outline_person_add_24px" />
+
+    </LinearLayout>
+
+</RelativeLayout>

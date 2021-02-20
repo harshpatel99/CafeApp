@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/historyCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/history_card_margin_rl"
+    android:layout_marginTop="@dimen/history_card_margin_tb"
+    android:layout_marginEnd="@dimen/history_card_margin_rl"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/history_card_corner_radius"
+    app:cardElevation="@dimen/history_card_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/history_item_card_padding">
+
+        <TextView
+            android:id="@+id/historyCardAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/total_amount"
+            android:textSize="@dimen/history_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/history_text_size" />
+
+        <TextView
+            android:id="@+id/history_card_ordered_by_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardAmt"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:layout_marginTop="@dimen/history_subtitle_margin_top"
+            android:text="@string/ordered_by"
+            android:textColor="@color/history_card_subtitle_color"
+            android:textSize="@dimen/history_card_subtitle_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardOrderedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@id/history_card_ordered_by_text"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:layout_marginBottom="8dp"
+            android:textSize="@dimen/history_card_subtext_text_size" />
+
+        <TextView
+            android:id="@+id/history_card_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardOrderedBy"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:layout_marginTop="@dimen/history_subtitle_margin_top"
+            android:text="@string/items"
+            android:textColor="@color/history_card_subtitle_color"
+            android:textSize="@dimen/history_card_subtitle_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardItems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/history_card_items_text"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:textSize="@dimen/history_card_subtext_text_size" />
+
+        <TextView
+            android:id="@+id/history_card_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardItems"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:text="@string/orderedon"
+            android:textColor="@color/history_card_subtitle_color"
+            android:textSize="@dimen/history_card_subtitle_text_size" />
+
+        <TextView
+            android:id="@+id/historyCardDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/history_card_date_text"
+            android:layout_marginStart="@dimen/history_subtitle_margin_start"
+            android:textSize="@dimen/history_card_subtext_text_size" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/historyCardOrderStatusButton"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/historyCardDate"
+            android:layout_alignParentEnd="true"
+            android:text="@string/order_placed" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
